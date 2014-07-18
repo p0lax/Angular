@@ -1,20 +1,41 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app ng-controller="PhoneListCtrl">
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>Google Phone Gallery: {{query}}</title>
     <script type="application/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.js"></script>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="controller.js"></script>
 </head>
-<body ng-controller="PhoneListCtrl">
-    <ul>
-        <li ng-repeat="phone in phones">
-            {{phone.name}}
-            <p>{{phone.snippet}}</p>
-        </li>
-    </ul>
+<body>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span2">
+                Search: <input ng-model="query">
+                Sort by:
+                <select ng-model="orderProp">
+                    <option value="name">Alphabetical</option>
+                    <option value="age">Newest</option>
+                </select>
+            </div>
+            <div class="span10">
+                <ul class="phones">
+                    <li ng-repeat="phone in phones | filter:query | orderBy:orderProp">
+                        {{phone.name}}
+                        <p>{{phone.snippet}}</p>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <table>
+        <tr><th>row number</th></tr>
+        <tr ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7]">
+            <td>{{i+1}}</td>
+        </tr>
+    </table>
 </body>
 </html>
