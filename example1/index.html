@@ -2,7 +2,7 @@
 <html ng-app ng-controller="PhoneListCtrl">
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Google Phone Gallery: {{query}}</title>
+    <title ng-bind-template="Google Phone Gallery: {{query}}">Google Phone Gallery</title>
     <script type="application/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.js"></script>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
@@ -16,8 +16,8 @@
                 Search: <input ng-model="query">
                 Sort by:
                 <select ng-model="orderProp">
-                    <option value="name">Alphabetical</option>
-                    <option value="age">Newest</option>
+                    <option value="name">По имени</option>
+                    <option value="age">По дате</option>
                 </select>
             </div>
             <div class="span10">
@@ -27,7 +27,6 @@
                         <p>{{phone.snippet}}</p>
                     </li>
                 </ul>
-
             </div>
         </div>
     </div>
