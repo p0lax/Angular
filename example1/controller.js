@@ -9,7 +9,6 @@ phonecatControllers.controller('PhoneListCtrl', ['$scope', '$http',
         $http.get('phones/phones.json').success(function (data) {
             $scope.phones = data;
         });
-
         $scope.orderProp = 'age';
     }]);
 
@@ -22,5 +21,6 @@ phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', '$h
 
         $scope.setImage = function(imageUrl) {
             $scope.mainImageUrl = imageUrl;
+            console.log(imageUrl);
         }
     }]);
