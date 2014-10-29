@@ -1,0 +1,20 @@
+<table class="table">
+    <thead>
+        <th>#</th>
+        <th>Fingerprint</th>
+        <th>CA</th>
+        <th>e-mail</th>
+        <th>Valid</th>
+        <th>Created</th>
+    </thead>
+    <tbody>
+        <tr ng-repeat="cert in certs">
+            <td>{{cert.id}}</td>
+            <td>{{cert.name}}</td>
+            <td>{{cert.company}}</td>
+            <td>{{cert.email}}</td>
+            <td>{{cert.valid}}</td>
+            <td>{{cert.created}}</td>
+        </tr>
+    </tbody>
+</table>

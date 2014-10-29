@@ -6,13 +6,14 @@
 
 var phonecatApp = angular.module('certApp', [
     'ngRoute',
-    'certControllers'
+    'certControllers',
+    'certServices'
 ]);
 
 phonecatApp.config(['$routeProvider',
     function($routeProvider) {
         $routeProvider.
-            when('/certificates', {
+            when('/certificates/', {
                 templateUrl: 'views/cert-list.html',
                 controller: 'CertListController'
             }).
