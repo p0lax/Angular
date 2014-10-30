@@ -1,7 +1,6 @@
 /**
  *  Services
  */
-
 'use strict';
 
 var certServices = angular.module('certServices', ['ngResource']);
