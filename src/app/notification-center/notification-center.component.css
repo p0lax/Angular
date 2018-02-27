@@ -1,0 +1,8 @@
+.notification-center {
+  position: fixed;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  height: 1px;
+}
