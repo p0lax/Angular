@@ -1,0 +1,11 @@
+.server {
+  color: #fff;
+}
+
+.online {
+  background-color: darkgreen;
+}
+
+.offline {
+  background-color: darkred;
+}
