@@ -5,13 +5,19 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { NotificationCenterComponent } from './notification-center/notification-center.component';
 import { NotificationComponent } from './notification/notification.component';
+import { ServersComponent } from './servers/servers.component';
+import { ServerComponent } from './server/server.component';
+import { UserNameComponent } from './user-name/user-name.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NotificationCenterComponent,
-    NotificationComponent
+    NotificationComponent,
+    ServersComponent,
+    ServerComponent,
+    UserNameComponent
   ],
   imports: [
     BrowserModule,
