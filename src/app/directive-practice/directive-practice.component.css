@@ -1,0 +1,9 @@
+.actions {
+  height: 200px;
+  overflow: auto;
+  background-color: #ddd;
+}
+
+.active {
+  color: #fff;
+}

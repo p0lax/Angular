@@ -8,6 +8,7 @@ import { NotificationComponent } from './notification/notification.component';
 import { ServersComponent } from './servers/servers.component';
 import { ServerComponent } from './server/server.component';
 import { UserNameComponent } from './user-name/user-name.component';
+import { DirectivePracticeComponent } from './directive-practice/directive-practice.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { UserNameComponent } from './user-name/user-name.component';
     NotificationComponent,
     ServersComponent,
     ServerComponent,
-    UserNameComponent
+    UserNameComponent,
+    DirectivePracticeComponent
   ],
   imports: [
     BrowserModule,
