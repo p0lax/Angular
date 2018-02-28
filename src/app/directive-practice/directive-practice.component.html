@@ -9,9 +9,9 @@
 
 <div class="actions">
   <div 
-    *ngFor="let action of toggleActions" 
-    [ngClass]="{active: action > 5}"
-    [ngStyle]="{backgroundColor: action > 5 && 'darkblue'}"
+    *ngFor="let action of toggleActions; let i = index;" 
+    [ngClass]="{active: i >= 4}"
+    [ngStyle]="{backgroundColor: i >= 4 && 'darkblue'}"
   >
     {{action}}
   </div>

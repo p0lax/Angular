@@ -14,7 +14,7 @@ export class DirectivePracticeComponent implements OnInit {
   ngOnInit() {}
 
   onToggleDetails() {
-    this.toggleActions.push(this.toggleActions.length + 1);
+    this.toggleActions.push(new Date());
     console.log(this.toggleActions);
     this.isDetailsVisible = !this.isDetailsVisible;
   }
