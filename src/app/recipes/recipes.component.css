@@ -1,0 +1,17 @@
+.recipe {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+}
+
+.recipe-list-container {
+  flex: 1;
+  border: 1px dotted #ddd;
+  background-color: #fff;
+}
+
+.recipe-detail-container {
+  flex: 2;
+  background-color: #fd0;
+}

@@ -1,0 +1,29 @@
+.recipe {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  height: 70px;
+  padding: 5px;
+  margin-bottom: 3px;
+  background-color: #dfdfdf;
+  border: 1px dashed #000;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.recipe:hover {
+  background-color: #d0d0d0;
+}
+
+.recipe-image img {
+  width: 100px;
+}
+
+.description {
+  margin-left: 5px;
+}
+
+.description h3 {
+  margin: 0;
+  padding: 0;
+}
