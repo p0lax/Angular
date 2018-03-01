@@ -1,0 +1,10 @@
+.recipe-detail {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.recipe-title h1 {
+  margin: 0;
+  padding: 0;
+}
