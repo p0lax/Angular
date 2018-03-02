@@ -3,7 +3,11 @@
     <button class="btn btn-success">Add Recipe</button>
   </div>
   <div>
-    <app-recipe-item *ngFor="let item of recipes" [recipe]="item">
+    <app-recipe-item 
+      *ngFor="let item of recipes" 
+      [recipe]="item"
+      (recipeDeleted)="onRecipeDeleted($event)"
+    >
     </app-recipe-item>
   </div>
 </div>
