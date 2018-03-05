@@ -12,6 +12,8 @@ import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import { ShoppingListEditorComponent } from './shopping-list/shopping-list-editor/shopping-list-editor.component';
+import { GameStateComponent } from './game-state/game-state.component';
+import { NumbersComponent } from './game-state/numbers/numbers.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { ShoppingListEditorComponent } from './shopping-list/shopping-list-edito
     RecipeListComponent,
     RecipeDetailComponent,
     RecipeItemComponent,
-    ShoppingListEditorComponent
+    ShoppingListEditorComponent,
+    GameStateComponent,
+    NumbersComponent
   ],
   imports: [
     BrowserModule,
