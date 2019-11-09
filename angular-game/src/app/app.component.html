@@ -1,0 +1,30 @@
+<mat-drawer-container class="container" autosize>
+  <mat-drawer #drawer class="sidenav" mode="side">
+    <a [routerLink]="['/hero']">Hero</a>
+    <div>Text</div>
+  </mat-drawer>
+
+  <div class="content-wrapper">
+    <div class="triggers">
+      <mat-icon 
+        *ngIf="!drawer.opened" 
+        (click)="drawer.toggle()"
+        aria-hidden="false" 
+        aria-label="Open sidebar"
+      >
+        keyboard_arrow_left
+      </mat-icon>
+      <mat-icon 
+        *ngIf="drawer.opened" 
+        (click)="drawer.toggle()"
+        aria-hidden="false" 
+        aria-label="Close sidebar"
+      >
+        keyboard_arrow_right
+      </mat-icon>
+    </div>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</mat-drawer-container>
