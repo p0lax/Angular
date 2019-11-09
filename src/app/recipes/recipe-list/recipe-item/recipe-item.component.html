@@ -1,9 +1,0 @@
-<div class="recipe" (click)="onDeleteRecipe()">
-  <div class="recipe-image">
-    <img src="{{ recipe.imagePath }}" alt="{{ recipe.name }}">
-  </div>
-  <div class="description">
-    <h3 #recipeName>{{ recipe.name }}</h3>
-    <p>{{ recipe.description }}<ng-content></ng-content></p>
-  </div>
-</div>
